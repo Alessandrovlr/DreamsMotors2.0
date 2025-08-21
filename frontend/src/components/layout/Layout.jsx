@@ -4,9 +4,9 @@ import { MenuLayout } from "./MenuLayout"
 
 export const Layout = () => {
     return(
-        <div>
+        <div className="bg-[#19191a] text-white min-h-screen">
             <MenuLayout/>
-            <main>
+            <main className="p-4 ">
                 <Outlet/>
             </main>
             <FooterLayout/>

@@ -1,5 +1,5 @@
 const express = require('express');
-const pool = require('backend/config/api/connection/database'); 
+const pool = require('../../connection/database');
 
 const router = express.Router();
 

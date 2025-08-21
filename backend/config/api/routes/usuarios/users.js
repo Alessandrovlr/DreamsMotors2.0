@@ -1,5 +1,5 @@
 const express = require('express');
-const pool = require('../config/api/connection/database'); 
+const pool = require('../../connection/database');
 
 const router = express.Router();
 
@@ -55,7 +55,7 @@ router.post('/usuarios', async (req, res) => {
 });
 
 // Rota para atualizar um usuário
-router.put('/usuarios/:id_usuario', async (req, res) => {
+router.put('/:id_usuario', async (req, res) => {
     const { id_usuario } = req.params;
     const { nome, login, senha, tipo } = req.body;
     

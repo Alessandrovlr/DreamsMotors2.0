@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
 
+.inputLogin {
+  background-color: #1f1f23;
+  border: none;
+  border-radius: 0.5rem; /* rounded */
+  padding: 0.75rem 1rem; /* py-3 px-4 */
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.inputLogin::placeholder {
+  color: #a1a1aa; /* cinza claro */
+}
+
+.inputLogin:focus {
+  box-shadow: 0 0 0 3px rgb(99 102 241); /* foco azul índigo */
+}
 
 
 /* :root {
